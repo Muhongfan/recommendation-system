@@ -19,7 +19,7 @@ import java.util.*;
 public class MonkeyLearnClient {
 
     private static final String EXTRACT_URL = "https://api.monkeylearn.com/v3/extractors/ex_YCya9nrn/extract/";
-    private static final String AUTH_TOKEN =  "8e6d6d76a45fc43c48abe2f2e496aaa0c0b37981";
+    private static final String AUTH_TOKEN =  "2de6ad9899fc4f98720bfdf476f0097984cc713e";
     public List<Set<String>> extract(List<String> articles) {
         ObjectMapper mapper = new ObjectMapper();
         CloseableHttpClient httpClient = HttpClients.createDefault();

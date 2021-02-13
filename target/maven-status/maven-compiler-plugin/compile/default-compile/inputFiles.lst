@@ -1,8 +1,14 @@
+/Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/external/MonkeyLearnClient.java
 /Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/servlet/RecommendationServlet.java
-/Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/servlet/ExampleBookServlet.java
+/Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/entity/ExtractRequestBody.java
 /Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/servlet/ExampleJobServlet.java
+/Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/external/GitHubClient.java
+/Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/entity/ExtractResponseItem.java
 /Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/entity/ExampleJob.java
 /Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/servlet/SearchServlet.java
+/Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/entity/Extraction.java
 /Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/entity/ExampleCoordinates.java
-/Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/servlet/TestServlet.java
 /Users/momo/Documents/Laioff/src/main/java/com/laioffer/jupiter/HelloServlet.java
+/Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/entity/Item.java
+/Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/servlet/ExampleBookServlet.java
+/Users/momo/Documents/Laioff/src/main/java/com/laioffer/job/servlet/TestServlet.java

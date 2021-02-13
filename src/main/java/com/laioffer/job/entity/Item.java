@@ -12,6 +12,24 @@ import java.util.Set;
 //indicates that null fields can be skipped and not included.
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Item {
+
+
+
+    public Item() {
+    }
+
+    public Item(String id, String title, String location, String companyLogo, String url, String description, Set<String> keywords, boolean favorite) {
+        this.id = id;
+        this.title = title;
+        this.location = location;
+        this.companyLogo = companyLogo;
+        this.url = url;
+        this.description = description;
+        this.keywords = keywords;
+        this.favorite = favorite;
+    }
+
+
     private String id;
     private String title;
     private String location;
@@ -88,4 +106,7 @@ public class Item {
                 ", favorite=" + favorite +
                 '}';
     }
+
+
+
 }
