@@ -50,6 +50,7 @@ public class HistoryServlet extends HttpServlet {
         HistoryRequestBody body = mapper.readValue(request.getReader(), HistoryRequestBody.class);
 
         MySQLConnection connection = new MySQLConnection();
+        // similar with GOPOST method
         connection.unsetFavoriteItems(body.userId, body.favorite.getId());
         connection.close();
 
