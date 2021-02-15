@@ -3,6 +3,7 @@ package com.laioffer.job.servlet;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.laioffer.job.db.MySQLConnection;
 import com.laioffer.job.entity.Item;
+import com.laioffer.job.entity.ResultResponse;
 import com.laioffer.job.external.GitHubClient;
 
 import javax.servlet.*;
@@ -18,6 +19,16 @@ public class SearchServlet extends HttpServlet {
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        ObjectMapper mapper = new ObjectMapper();
+        HttpSession session = request.getSession(false);
+        if (session == null) {
+            response.setStatus(403);
+            mapper.writeValue(response.getWriter(), new ResultResponse("Session Invalid"));
+            return;
+        }
+
+
         String userId = request.getParameter("user_id");
 
         double lat = Double.parseDouble(request.getParameter("lat"));
@@ -37,8 +48,8 @@ public class SearchServlet extends HttpServlet {
         }
 
 
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.writeValue(response.getWriter(), items);
+//        ObjectMapper mapper = new ObjectMapper();
+//        mapper.writeValue(response.getWriter(), items);
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
